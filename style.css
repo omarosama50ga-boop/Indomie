@@ -1,0 +1,187 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+
+.header-1{
+text-align: right;
+background-color: red;
+padding: 10px;
+color: beige;
+
+border-radius: 3px;
+}
+header{
+display: flex;
+background-color: rgb(230, 9, 9);
+padding: 10px;
+align-items: center;
+justify-content: space-between;
+z-index: 1;
+
+}
+ header    .left ul{
+display: flex;
+
+ }
+
+ header    .left a{
+
+color: white;
+display: block;
+padding: 10px;
+margin: 10px;
+
+
+ }
+
+ header    .left a:hover{
+background-color: #505 ;
+border-radius: 10px;
+
+ }
+ header    .left .i{
+background-color: yellow;
+color: black;
+ }
+
+header .right ul{
+gap: 20px;
+display: flex;
+
+}
+ header .right ul{
+
+    align-items: center;
+ }
+ header .right ul a{
+
+padding: 10px;
+margin: 10px;
+border-radius: 20px;
+
+}
+ header .right ul a:hover{
+
+background-color: rgba(505, 505, 505, 0.1);
+
+
+}
+
+
+ header .right ul img {
+border-radius: 30px;
+width: 60px;
+height: 60px;
+
+
+}
+ header .right ul i{
+color: white;
+font-size: 30px;
+
+
+ }
+ .background-image{
+
+  background-image: url(img/street-food-still-life.jpg); 
+  background-position: center;            
+  background-repeat: no-repeat;        
+                     
+  height: 100vh;                         
+background-size: 100% 100%;
+
+display: flex;
+justify-content: center;
+text-align: center;
+line-height: 100px;
+
+ }
+.content  .background-image .title h1{
+margin: 40px 0;
+color: white;
+
+
+}
+
+  .content  .background-image .title h1    span{
+
+color: green;
+
+
+  }
+  .content  .background-image .title , h1   , span {
+font-size: 50px;
+
+  }
+
+  .content  .background-image .title h5{
+
+
+color: white;
+
+  }  
+  .content  .background-image .title button{
+
+padding: 20px;
+
+background-image: linear-gradient(orange , yellow);
+cursor: pointer;
+box-shadow:  0   10px   5px    red  ;
+border: none;
+font-size: 40px;
+color: rgb(206, 12, 12);
+transition: 0.5s;
+animation-name: scale ;
+animation-iteration-count: 1;
+animation-duration: 3s;
+
+  }
+  @keyframes scale{
+0%{
+
+scale: 0; 
+
+}
+25%{
+    scale: 1.07; 
+}
+
+
+  }
+
+
+
+
+    .content  .background-image .title button:hover{
+
+       scale: 1.07; 
+    }
+select{
+padding: 3px;
+color: white;
+    background-color: red;
+    border: none;
+    outline: none;
+}
+option{
+
+
+    background-color: rgba(38, 0, 255, 0.413);
+}
+
+@media (max-width  : 600px    ){
+
+    header {
+     
+      flex-wrap: wrap;
+
+
+    }
+   
+}
+
